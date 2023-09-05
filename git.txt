@@ -1,0 +1,112 @@
+git commands:
+=============
+git init
+
+touch abc.txt
+
+git add .
+git ls-files---->the files which are present inthe staging area  
+
+git commit -m "add file"
+
+git commit -a -m "addfile"--->add and commit by single command
+
+git log
+
+git config
+
+Requirement-1:to see the difference in file content between working area and staging area we can use 'git diff'
+
+ git diff file
+
+diff --git a/file b/file
+index 57608c2..c1a6365 100644
+--- a/file
++++ b/file
+@@ -1 +1,2 @@
+ hi how are you
++how are you
+
+a/file --->represents source(staging)
+b/file --->represents destination(working dir)
+57608c2 hash of file content from source/staging
+c1a6365 hash of file content from destination/working area
+100644----> file permissions rw-r-r
+
+--- source file missing the some lines
++++ new files added in the working directory
+
+if anyline prefixed with space means it is unchanged
+if anyline prefixed with + means it is added in destination copy
+if anyline prefixed with - means it is removed from destination copy
+
+Requirement-2:to see the defference in file content between working directory and last commit.
+
+* git diff HEAD file
+
+diff --git a/file b/file
+index 57608c2..0295e3e 100644
+--- a/file
++++ b/file
+@@ -1 +1,4 @@
+ hi how are you
++how are you
++good
++hello
+
+Requirement-3:to see the defference in file content between staged copy and last commit
+
+git diff --staged HEAD file
+
+
+git rm --cached file
+
+git ls-files---->it will show which files added into staging area
+
+git checkout command --->to discord unstaged changes in the tracked files.
+                     it will worjks for only tracked files
+
+git checkout -- file.txt
+
+git reset:
+-----------
+1.to remove the changes from staging area
+2.to undo commits at the repository level
+
+1)git init 
+  touch abc.txt
+  git add .
+  git reset abc.txt
+
+2)git reset --mixed commitid --> it is default formate
+
+git reset --mixed commitid -->to remove the file from staging area and local repository also.it will not change the working direcory
+
+
+ vim file1.txt
+   animals
+vim file2.txt
+  lions
+vim file3.txt
+  tigers
+
+ git add file1 ; git commit -m "hi"
+ git add file2 ; git commit -m "hi"
+ git add file3 ; git commit -m "hi"
+ git log
+ git ls-files
+ git log --oneline
+8567902 (HEAD -> master) commit-1
+cf7ab3d commit-2
+65a7ed3 commit-3
+
+ git reset cf7ab3d
+ git ls-files
+ git log
+
+git reset command is works in two levels
+one for discord the changes in staging area
+second is discord the changes in repository and staging area and it con't modify the woring directory 
+
+
+
