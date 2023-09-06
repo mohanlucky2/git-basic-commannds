@@ -1,0 +1,99 @@
+ 595  cat file
+  596  vim file
+  597  git add . ;git commit -m "c-3"
+  598  git checkout master
+  599  vim file
+  600  git add . ;git commit -m "c-4"
+  601  git branch
+  602  git merge dev
+  603  vim file
+  604  git status
+  605  git add . ;git commit -m "c-4"
+  606  rm -rf *
+  607  ls
+  608  rm -rf .git/
+  609  git init
+  610  vim file
+  611  git add . ;git commit -m "c1"
+  612  git log
+  613  vim file
+  614  git add . ;git commit -m "c2"
+  615  git branch
+  616  git checkout -b feture
+  617  vim file
+  618  git add . ;git commit -m "c3"
+  619  git checkout feature
+  620  git checkout master
+  621  vim file
+  622  git add . ;git commit -m "c4"
+  623  git merege feature
+  624  git merge feature
+  625  git merge feture
+  626  vim file
+  627  git add . ;git commit -m "c5"
+  628  rm -rf *
+  629  rm -rf .git/
+  630  ls -al
+  631  git init
+  632  vim file
+  633  git add .
+  634  git status
+  635  git ls-files
+  636  vim file
+  637  gitstatus
+  638  git status
+  639  git checkout --file
+  640  git checkout file
+  641  cat file
+  642  git status
+  643  git reset file
+  644  git status
+  645  mv file file1
+  646  cat file1
+  647  git log
+  648  ls -al
+  649  vim file1
+  650  git status
+  651  git add .;git commit -m "c-1"
+  652  git log
+  653  vim file2
+  654  git add .;git commit -m "c-2"
+  655  vim file3
+  656  git add .;git commit -m "c-3"
+  657  git log
+  658  vim file4
+  659  git add .;git commit -m "c-4"
+  660  git log
+  661  git log --oneline
+  662  git ls-files
+  663  git reset a9e425e
+  664  git ls-files
+  665  git log
+  666  git log --oneline
+  667  git status
+  668  git reset bf1b3d4
+  669  git log
+  670  git branch
+  671  ls
+  672  git checkout dev
+  673  git checkout -b dev
+  674  git branch
+  675  ls
+  676  cat file1
+  677  cat file2
+  678  git status
+  679  git add .;git commit -m "c-2"
+  680  git log
+  681  vim abc
+  682  git add .;git commit -m "c-3"
+  683  git log
+  684  ls
+  685  git checkout master
+  686  ls
+  687  git branch
+  688  git cherry-pick 155e6d5844
+  689  ls
+  690  git merge dev
+  691  ls
+  692  git clone https://github.com/mohanlucky2/git-basic-commannds.git
+  693  ls
