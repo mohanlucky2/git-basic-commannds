@@ -1,0 +1,57 @@
+part-1:introduction
+1.what is the devops
+2.software architecture
+3.SDLC
+4.a.waterfall methodology
+   b.agile methodology
+
+part-2:linux commands,shell scripting
+1.os
+2.installation of vm ware
+3.shell scripting
+
+part-3:aws
+1.introduction of aws
+2.creation of aws account
+3.diffrence between IAAS,PAAS,SAAS
+4.aws resources
+-->ec2(instance)
+-->ebs(elastic block store)
+-->autoscaling
+-->loadbalencer
+-->AMI
+--->SNAPSHOTS
+-->IAM
+-->VPC
+-->SNS(simple notification service)
+-->SES
+--->Cloudwatch.
+-->RDS(relational database service)mysql,amazon arora
+-->cloud formation
+--lamda
+-->s3
+-->regios
+-->billing
+--->elastic bean stack
+part4:devops
+-->git(version control system)github
+-->maven(build tool)
+-->jenkins(CI & CD)
+-->ANSIBLE(CONFIGURAION MANAGEMENT TOOL)playbooks
+-->TERRAFORM(iaas)
+docker
+docker compose
+docker swarm 
+k8s(kubernetes)
+sonarqube
+nexus
+nagios
+ymal
+tomcat
+
+
+part-5:real time projects
+
+part-6:resume preparation
+
+
